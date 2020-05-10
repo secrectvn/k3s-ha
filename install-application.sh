@@ -1,6 +1,6 @@
 #!/bin/bash
 # Basic Application
-sudo apt install git curl unzip htop flameshot curl -y 
+sudo apt install git curl unzip htop flameshot curl telegram-desktop -y 
 
 ### Install Brave
 sudo apt install apt-transport-https -y && \
@@ -12,7 +12,7 @@ sudo apt install brave-browser -y
 ### Install Ibus-Bamboo
 sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo -y && \
 sudo apt-get update && \
-sudo apt-get install ibus-bamboo && \
+sudo apt-get install ibus-bamboo -y && \
 ibus restart
 
 ### Install Google Chrome
@@ -47,4 +47,4 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 sudo apt-get update
-sudo apt-get install atom
+sudo apt-get install atom -y
